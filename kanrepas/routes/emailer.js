@@ -21,7 +21,7 @@ const auth = async (emailaddress) => {
     });
     console.log(verificationString);
     await transporter.sendMail({
-      from: '"Password_Reset link from RamanGiri  😊" <process.env.EMAIL_USERNAME>',
+      from: '"Password_Reset link 😊",
       to: emailaddress,
       subject: "Password Reset",
       html: `<div style="margin : 0 auto; width: 450px; border:1px solid lightgray; border-radius:5px; padding:1rem; text-align:center;">
