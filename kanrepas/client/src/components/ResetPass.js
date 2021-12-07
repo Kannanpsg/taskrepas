@@ -12,7 +12,7 @@ function ResetPassword(props) {
     e.preventDefault();
     if (matchPassword() !== undefined) {
       const connect = await fetch(
-        `process.env.CLIENT_SERVER${props.location.pathname}`,
+        `process.env.CLIENT_SERVER$`,
         {
           method: "POST",
           body: JSON.stringify({
